@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Договор-оферта', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Реквизиты', link: '/info-oferta-parts' }
     ],
 
     sidebar: [
@@ -16,13 +16,22 @@ export default defineConfig({
         text: 'Содержание',
         items: [
           { text: 'Договор-оферта', link: '/info-oferta' },
-          { text: 'Приложения', link: '/info-oferta-parts' }
+          { text: 'Термины и определения', link: '/terms' },
+          { text: 'Предмет договора', link: '/about' },
+          { text: 'Права и обязанности сторон', link: '/obligations' },
+          { text: 'Оплата услуг', link: '/pays' },
+          { text: 'Ответственность сторон', link: '/reply' },
+          { text: 'Порядок разрешения споров', link: '/arbitr' },
+          { text: 'Форс-мажор', link: '/fors' },
+          { text: 'Персональные данные', link: '/pd' },
+          { text: 'Общие положения', link: '/info-oferta-parts' },
+          { text: 'Реквизиты', link: '/invoice' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/ink-kin/arhi-pro-info-oferta' }
     ]
   }
 })
