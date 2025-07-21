@@ -2,8 +2,12 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'ru-RU',
   title: "Договор-оферта подписки Архи-Про ",
   description: "Договор-оферта на оказание информационных услуг в формате подписки",
+  head: [
+    [ 'link', { rel: 'preconnect', href: 'https://telegram.org/js/telegram-web-app.js?58' } ]
+   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -14,6 +18,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Содержание',
+        collapsed: true,
         items: [
           { text: 'Договор-оферта', link: '/info-oferta' },
           { text: 'Термины и определения', link: '/terms' },
@@ -32,6 +37,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ink-kin/arhi-pro-info-oferta' }
-    ]
+    ],
+    sitemap: { hostname: 'https://info-oferta.arhi-pro.ru'}
   }
 })
